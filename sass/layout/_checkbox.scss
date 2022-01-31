@@ -1,0 +1,67 @@
+.terms {
+  &--geometry {
+    margin-top: 20px;
+    text-align: center;
+  }
+  &__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include fontStyle;
+
+    color: $secondColor;
+  }
+  &__input-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  &__custom-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 5px;
+
+    border: 2px solid #212121;
+    border-radius: 2px;
+  }
+  &__input-checkbox:checked + &__custom-checkbox {
+    border-color: transparent;
+    background-color: #2196f3;
+    background-image: url("../images/check-box-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__link {
+    color: $hoverColor;
+    margin-left: 5px;
+
+    @include fontStyle;
+  }
+}
+
+.modal-submit-button {
+  display: block;
+  margin: 30px auto 0;
+  background: $hoverColor;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 55px;
+  color: #ffffff;
+  border-color: transparent;
+  cursor: pointer;
+
+  transition: background-color 250ms $timingFunction;
+}
+
+.modal-submit-button:focus,
+.modal-submit-button:hover {
+  background-color: #188ce8;
+}

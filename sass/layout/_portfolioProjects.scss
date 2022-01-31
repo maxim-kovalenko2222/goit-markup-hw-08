@@ -1,0 +1,73 @@
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.projects-list > .projects-item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.card {
+  border: 1px solid #eeeeee;
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    @include fontStyle(18px, 2, 0.06em);
+
+    margin-bottom: 3px;
+  }
+  &__text {
+    color: $secondColor;
+
+    @include fontStyle(16px, 1.87);
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    cursor: pointer;
+  }
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  transition: transform 250ms $timingFunction;
+}
+
+.card-overlay-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 322px;
+  height: 168px;
+
+  color: #ffffff;
+  @include fontStyle(18px, 1.56);
+}
+
+.card:hover .card-overlay {
+  transform: translateY(0);
+}

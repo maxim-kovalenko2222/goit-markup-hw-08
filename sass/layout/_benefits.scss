@@ -1,0 +1,53 @@
+.benefits-list {
+  display: flex;
+  &__item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    @include fontStyle($lh: 1.14);
+
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    color: $secondColor;
+    @include fontStyle();
+  }
+}
+
+.benefits-list__item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.benefits-list__item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-list__item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-list__item:nth-child(3)::before {
+  background-image: url(../images/computer.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.benefits-list__item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}

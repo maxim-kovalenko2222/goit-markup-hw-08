@@ -1,0 +1,81 @@
+.team {
+  background-color: $itemBgColor;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+
+  &__item {
+    flex-basis: calc(100% / 4 - 30px);
+
+    margin-left: 30px;
+    background-color: #ffffff;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+  }
+
+  &__member {
+    font-weight: 500;
+    @include fontStyle(16px, 1.18);
+
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: $secondColor;
+    @include fontStyle(16px, 1.18);
+
+    text-align: center;
+  }
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    margin-top: 16px;
+    &:nth-child(n + 2) {
+      margin-left: 10px;
+    }
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    fill: #afb1b8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    transition: fill 250ms $timingFunction,
+      background-color 250ms $timingFunction;
+
+    &:hover,
+    &:focus {
+      background-color: $hoverColor;
+      fill: #ffffff;
+    }
+  }
+}
+
+.team-section-title {
+  margin-bottom: 50px;
+}
+
+.team--box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
