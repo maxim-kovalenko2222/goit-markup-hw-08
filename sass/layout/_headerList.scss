@@ -3,98 +3,100 @@
 }
 
 @media screen and (max-width: 767px) {
-  .navigation__list,
-  .navigation-contacts {
+  .navigation-contacts-box {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .navigation-container {
-    display: flex;
-    align-items: center;
-  }
-  .navigation {
-    display: flex;
-    align-items: center;
-    &__list {
-      display: flex;
-      margin-left: 88px;
-    }
-    &__link {
-      display: block;
+// .navigation-contacts-box {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .navigation-container {
+//   display: flex;
+//   align-items: center;
+// }
 
-      padding-top: 32px;
-      padding-bottom: 32px;
+// .navigation {
+//   display: flex;
+//   align-items: center;
+//   &__list {
+//     display: flex;
+//     margin-left: 93px;
+//   }
+//   &__link {
+//     display: block;
 
-      color: $primaryColor;
-      text-decoration: none;
-      font-weight: 500;
-      @include fontStyle(14px, 1.14, 0.02em);
+//     padding-top: 32px;
+//     padding-bottom: 32px;
 
-      transition: color 250ms $timingFunction;
+//     color: $primaryColor;
+//     text-decoration: none;
+//     font-weight: 500;
+//     @include fontStyle(14px, 1.14, 0.02em);
 
-      &:hover,
-      &:focus {
-        color: $hoverColor;
-      }
-    }
-    &__item:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
+//     transition: color 250ms $timingFunction;
 
-  .navigation-contacts {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+//     &:hover,
+//     &:focus {
+//       color: $hoverColor;
+//     }
+//   }
+//   &__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
-    margin-left: 84px;
+// .navigation-contacts {
+//   display: flex;
+//   margin-left: auto;
 
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
-    }
+//   &__mail,
+//   &__tel {
+//     display: flex;
+//     flex-direction: row-reverse;
 
-    &__mail,
-    &__tel {
-      display: flex;
-      flex-direction: row-reverse;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
 
-      color: $secondColor;
-      text-decoration: none;
+//     color: $secondColor;
+//     text-decoration: none;
 
-      font-weight: 500;
-      @include fontStyle(12px, 1.16, 0.02em);
+//     font-weight: 500;
+//     @include fontStyle(14px, 1.14, 0.02em);
 
-      fill: $secondColor;
+//     fill: $secondColor;
 
-      transition: color 250ms $timingFunction, fill 250ms $timingFunction;
+//     transition: color 250ms $timingFunction, fill 250ms $timingFunction;
 
-      &:hover,
-      &:focus {
-        color: $hoverColor;
-        fill: $hoverColor;
-      }
-    }
+//     &:hover,
+//     &:focus {
+//       color: $hoverColor;
+//       fill: $hoverColor;
+//     }
+//   }
 
-    &__icon {
-      margin-right: 8px;
-    }
-  }
-}
+//   &__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
 
-.current {
-  color: $hoverColor;
-  position: relative;
+//   &__icon {
+//     margin-right: 10px;
+//   }
+// }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: $hoverColor;
-    left: 0;
-    bottom: 0;
-    border-radius: 2px;
-  }
-}
+// .current {
+//   color: $hoverColor;
+//   position: relative;
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     height: 4px;
+//     background-color: $hoverColor;
+//     left: 0;
+//     bottom: 0;
+//     border-radius: 2px;
+//   }
+// }

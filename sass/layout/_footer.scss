@@ -1,5 +1,6 @@
 .footer {
   background-color: $footerBgColor;
+  text-align: center;
 
   &__container {
     padding-top: 60px;
@@ -21,8 +22,7 @@
   }
 
   &__links {
-    margin-top: 12px;
-    margin-left: 70px;
+    margin-top: 60px;
   }
 
   &__title {
@@ -37,10 +37,6 @@
   }
 }
 
-.contacts {
-  display: flex;
-}
-
 .address {
   &__location {
     color: #ffffff;
@@ -53,10 +49,10 @@
   }
 
   &__contacts {
-    margin-top: 9px;
+    margin-top: 8px;
   }
   &__tel {
-    margin-top: 9px;
+    margin-top: 8px;
   }
   &__mail,
   &__tel {
@@ -78,6 +74,7 @@
 
 .footer__social-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer__social-item:nth-child(n + 2) {
@@ -104,12 +101,12 @@
 }
 
 .subscription--box {
-  margin-left: 93px;
-  margin-top: 12px;
+  margin-top: 60px;
 }
 
 .subscription-title {
   margin-bottom: 20px;
+  text-align: center;
 
   color: #ffffff;
   font-weight: 700;
@@ -119,12 +116,9 @@
 }
 
 .subscription {
-  &__input {
-    position: relative;
-  }
   &__email {
     padding: 15px 16px;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -148,7 +142,6 @@
 
     text-align: center;
     padding: 10px 62px 10px 29px;
-    margin-left: 12px;
     height: 50px;
     width: 200px;
 
@@ -174,4 +167,10 @@
   color: rgba(255, 255, 255, 0.6);
 
   @include fontStyle(16px, 1.25, 0.03em);
+}
+
+.button-icon-position {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
 }

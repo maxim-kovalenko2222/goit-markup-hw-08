@@ -1,10 +1,10 @@
 .benefits-list {
-  display: flex;
+  // display: flex;
   &__item {
-    width: 270px;
+    // width: 270px;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-bottom: 30px;
     }
   }
   &__title {
@@ -13,6 +13,7 @@
 
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__text {
     color: $secondColor;

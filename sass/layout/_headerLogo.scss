@@ -7,39 +7,15 @@
   padding: 16px 0;
   display: block;
 
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
+  }
+
   &--web {
     color: $hoverColor;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-logo {
-    color: $primaryColor;
-    text-decoration: none;
-    padding: 26px 0;
-    display: block;
-
-    font-family: Raleway, sans-serif;
-    @include fontStyle(24px, 1.16, 0.03em);
-
-    &--web {
-      color: $hoverColor;
-    }
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-logo {
-    color: $primaryColor;
-    text-decoration: none;
-    padding: 25px 0;
-    display: block;
-
-    font-family: Raleway, sans-serif;
-    @include fontStyle(26px, 1.2, 0.03em);
-
-    &--web {
-      color: $hoverColor;
-    }
   }
 }

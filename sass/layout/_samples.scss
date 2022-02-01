@@ -1,3 +1,8 @@
+@media screen and (max-width: 767px) {
+  .samples {
+    display: none;
+  }
+}
 .samples {
   &--position {
     padding-top: 0;
