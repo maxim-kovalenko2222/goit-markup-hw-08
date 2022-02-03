@@ -1,8 +1,9 @@
-@media screen and (max-width: 767px) {
-  .samples {
+.samples {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
+
 .samples {
   &--position {
     padding-top: 0;

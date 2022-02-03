@@ -2,101 +2,96 @@
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
-  .navigation-contacts-box {
+.navigation-contacts-box {
+  @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-// .navigation-contacts-box {
-//   display: flex;
-//   justify-content: space-between;
-// }
-// .navigation-container {
-//   display: flex;
-//   align-items: center;
-// }
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
 
-// .navigation {
-//   display: flex;
-//   align-items: center;
-//   &__list {
-//     display: flex;
-//     margin-left: 93px;
-//   }
-//   &__link {
-//     display: block;
+.navigation {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    margin-right: -50px;
+  }
+  &__link {
+    display: block;
 
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
 
-//     color: $primaryColor;
-//     text-decoration: none;
-//     font-weight: 500;
-//     @include fontStyle(14px, 1.14, 0.02em);
+    color: $primaryColor;
+    text-decoration: none;
+    font-weight: 500;
+    @include fontStyle(14px, 1.14, 0.02em);
 
-//     transition: color 250ms $timingFunction;
+    transition: color 250ms $timingFunction;
 
-//     &:hover,
-//     &:focus {
-//       color: $hoverColor;
-//     }
-//   }
-//   &__item:not(:last-child) {
-//     margin-right: 50px;
-//   }
-// }
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+    }
+  }
+}
 
-// .navigation-contacts {
-//   display: flex;
-//   margin-left: auto;
+.navigation-contacts {
+  display: flex;
+  margin-left: auto;
 
-//   &__mail,
-//   &__tel {
-//     display: flex;
-//     flex-direction: row-reverse;
+  &__mail,
+  &__tel {
+    display: flex;
+    flex-direction: row-reverse;
 
-//     padding-top: 32px;
-//     padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-//     color: $secondColor;
-//     text-decoration: none;
+    color: $secondColor;
+    text-decoration: none;
 
-//     font-weight: 500;
-//     @include fontStyle(14px, 1.14, 0.02em);
+    font-weight: 500;
+    @include fontStyle(14px, 1.14, 0.02em);
 
-//     fill: $secondColor;
+    fill: $secondColor;
 
-//     transition: color 250ms $timingFunction, fill 250ms $timingFunction;
+    transition: color 250ms $timingFunction, fill 250ms $timingFunction;
 
-//     &:hover,
-//     &:focus {
-//       color: $hoverColor;
-//       fill: $hoverColor;
-//     }
-//   }
+    &:hover,
+    &:focus {
+      color: $hoverColor;
+      fill: $hoverColor;
+    }
+  }
 
-//   &__item:not(:last-child) {
-//     margin-right: 30px;
-//   }
+  &__icon {
+    margin-right: 10px;
+  }
+}
 
-//   &__icon {
-//     margin-right: 10px;
-//   }
-// }
+.current {
+  color: $hoverColor;
+  position: relative;
 
-// .current {
-//   color: $hoverColor;
-//   position: relative;
-
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 100%;
-//     height: 4px;
-//     background-color: $hoverColor;
-//     left: 0;
-//     bottom: 0;
-//     border-radius: 2px;
-//   }
-// }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $hoverColor;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+  }
+}

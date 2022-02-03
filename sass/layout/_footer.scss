@@ -5,6 +5,10 @@
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
@@ -23,6 +27,12 @@
 
   &__links {
     margin-top: 60px;
+    @media screen and (min-width: 768px) {
+      margin-top: 0;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 70px;
+    }
   }
 
   &__title {
@@ -37,6 +47,13 @@
   }
 }
 
+.address-links-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .address {
   &__location {
     color: #ffffff;
@@ -45,7 +62,7 @@
     @include fontStyle();
 
     margin-top: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   &__contacts {
@@ -102,6 +119,9 @@
 
 .subscription--box {
   margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .subscription-title {
@@ -116,18 +136,32 @@
 }
 
 .subscription {
+  &__input {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
   &__email {
     padding: 15px 16px;
     width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: $footerBgColor;
     color: rgba(255, 255, 255, 0.6);
     border-color: inherit;
     outline: none;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
 
   &__button {
@@ -147,7 +181,7 @@
 
     transition-property: background-color;
     transition-duration: 250ms;
-    transition-timing-function: var(--timing-function);
+    transition-timing-function: $timingFunction;
 
     &:focus,
     &:hover {
@@ -173,4 +207,8 @@
   position: relative;
   display: inline-block;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
