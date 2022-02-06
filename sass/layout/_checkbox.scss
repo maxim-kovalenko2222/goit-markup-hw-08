@@ -7,10 +7,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
 
-    @include fontStyle(12px, 1.16, 0.03em);
-
+  &__text {
+    @include fontStyle(11px, 1.16, 0.03em);
     color: $secondColor;
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(14px, 1.71);
+    }
+  }
+
+  &__link {
+    color: $hoverColor;
   }
   &__input-checkbox {
     position: absolute;
@@ -26,7 +35,7 @@
     display: inline-block;
     width: 16px;
     height: 15px;
-    margin-right: 5px;
+    margin-right: 8px;
 
     border: 2px solid #212121;
     border-radius: 2px;
@@ -38,10 +47,6 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-  }
-  &__link {
-    color: $hoverColor;
-    margin-left: 5px;
   }
 }
 

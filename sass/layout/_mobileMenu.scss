@@ -3,12 +3,16 @@
   background-color: #ffffff;
   top: 0;
   left: 0;
+
   width: 100vw;
   height: 100vh;
+
   z-index: 1;
+
   padding-top: 21px;
   padding-bottom: 48px;
-  transition: left 500ms $timingFunction;
+
+  transition: left 250ms $timingFunction;
   .container {
     height: 100%;
     display: flex;
@@ -93,9 +97,10 @@
 .mobile-menu-social-list {
   margin-top: 64px;
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
+
   &__item:not(:last-child) {
-    margin-right: 10px;
+    margin: 0 10px 10px 0;
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
