@@ -1,6 +1,8 @@
 .footer {
   background-color: $footerBgColor;
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   &__container {
     padding-top: 60px;
@@ -126,7 +128,6 @@
 
 .subscription-title {
   margin-bottom: 20px;
-  text-align: center;
 
   color: #ffffff;
   font-weight: 700;

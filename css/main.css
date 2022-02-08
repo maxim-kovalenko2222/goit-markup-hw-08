@@ -729,6 +729,12 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-list__title {
+    text-align: start;
+  }
+}
+
 .benefits-list__text {
   color: #757575;
   font-size: 14px;
@@ -1014,7 +1020,12 @@ ul {
 
 .footer {
   background-color: #2f303a;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
 }
 
 .footer__container {
@@ -1165,7 +1176,6 @@ ul {
 
 .subscription-title {
   margin-bottom: 20px;
-  text-align: center;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -1300,7 +1310,6 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: -8px;
-    margin-bottom: 30px;
   }
 }
 
@@ -1337,7 +1346,13 @@ ul {
 }
 
 .filters-container {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters-container {
+    margin-bottom: 30px;
+  }
 }
 
 .projects-list {
